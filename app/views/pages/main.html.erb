@@ -32,13 +32,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Book Club</a>
+          <a class="navbar-brand" href="#">Book<br>Club</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#main-slider"><i class="icon-home"></i></a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li class="active"><a href="#main-slider"><i class="glyphicon glyphicon-home"></i></a></li>
+            <li><a href="#how_it_works">How it Works</a></li>
+            <li><a href="#goods">Goods</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <!-- <li><a href="#about-us">About Us</a></li> -->
             <li><a href="#contact">Contact</a></li>
@@ -54,70 +54,21 @@
         <div class="container">
           <div class="carousel-content">
             <h1>5 Star Books Delivered to Your Door</h1>
-            <p class="lead">Xeon is the best free onepage responsive theme available arround the globe<br>Download it right now for free</p>
+            <p class="lead">Monthly club to help keep you reading and growing</p>
+            <%= link_to "Get Started", new_user_registration_path, class: 'btn btn-success btn-lg' %>
+            <a href="#how_it_works", class="btn btn-primary btn-lg">How it Works</a>
           </div>
         </div>
       </div><!--/.item-->
     </div><!--/.carousel-inner-->
   </section><!--/#main-slider-->
 
-  <section id="services">
-    <div class="container">
-      <div class="box first">
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <div class="center">
-              <i class="icon-apple icon-md icon-color1"></i>
-              <h4>iOS development</h4>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-            </div>
-          </div><!--/.col-md-4-->
-          <div class="col-md-4 col-sm-6">
-            <div class="center">
-              <i class="icon-android icon-md icon-color2"></i>
-              <h4>Android development</h4>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-            </div>
-          </div><!--/.col-md-4-->
-          <div class="col-md-4 col-sm-6">
-            <div class="center">
-              <i class="icon-windows icon-md icon-color3"></i>
-              <h4>Windows Phone development</h4>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-            </div>
-          </div><!--/.col-md-4-->
-          <div class="col-md-4 col-sm-6">
-            <div class="center">
-              <i class="icon-html5 icon-md icon-color4"></i>
-              <h4>Ruby on Rails development</h4>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-            </div>
-          </div><!--/.col-md-4-->
-          <div class="col-md-4 col-sm-6">
-            <div class="center">
-              <i class="icon-css3 icon-md icon-color5"></i>
-              <h4>Javascript development</h4>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-            </div>
-          </div><!--/.col-md-4-->
-          <div class="col-md-4 col-sm-6">
-            <div class="center">
-              <i class="icon-thumbs-up icon-md icon-color6"></i>
-              <h4>Responsive web design</h4>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-            </div>
-          </div><!--/.col-md-4-->
-        </div><!--/.row-->
-      </div><!--/.box-->
-    </div><!--/.container-->
-  </section><!--/#services-->
-
-  <section id="portfolio">
+  <section id="how_it_works">
     <div class="container">
       <div class="box">
         <div class="center gap">
-          <h2>When was the Last Time You Read a<br> 5 Star Book?</h2>
-          <p class="lead">We're betting its been a hot minute and you are beginning to miss it.</p>
+          <h2>How it Works</h2>
+          <p class="lead">Each month you get a box with the book of the month in it. <br>If you already own it or just don't want it. . . send it back on us.</p>
         </div><!--/.center-->
 
 
@@ -129,11 +80,11 @@
               <div class="col-lg-6 col-sm-6">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">67% of Young Adults Read Less than 2 Books a Year</h2>
-                <p class="lead">It turns out us humans aren't great when we have too many options. . . so when we get out of school a lot of us just stop reading all together.</p>
+                <h2 class="section-heading">Stay Ahead of the Curve</h2>
+                <p class="lead">The only way to maintain an edge is to keep growing.<br> Read the best books on business, success, and<br> topics of your choice.</p>
               </div>
               <div class="col-lg-5 col-sm-6">
-                <%= image_tag('photocircle.png', :class => "img-responsive") %>
+                <%= image_tag('woman-holding-box.jpg', :class => "img-responsive") %>
               </div>
             </div>
           </div>
@@ -143,69 +94,103 @@
 
       </div><!--/.box-->
     </div><!--/.container-->
-  </section><!--/#portfolio-->
+  </section><!--/#how_it_works-->
 
 
-  <div class="content-section-b">
+  <section id="goods">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Get Your Learning Mojo Back</h2>
-          <p class="lead">With Book Club you don’t have to worry. You will get an all star book every single month and more importantly you will have an entire army of fellow Book Clubbers to keep you accountable and make sure that you finish.</p>
-        </div>
-        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-          <%= image_tag('photocircle.png', :class => "img-responsive") %>
-        </div>
-      </div>
-    </div>
-    <!-- /.container -->
-  </div>
+      <div class="box first">
+        <div class="center gap">
+          <h2>The Goods</h2>
+          <p class="lead"></p>
+        </div><!--/.center-->
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="center">
+              <%= image_tag('contagious.jpg', class: 'img-responsive') %>            </div>
+
+          </div><!--/.col-md-4-->
+          <div class="col-md-4 col-sm-6">
+            <div class="center">
+              <%= image_tag('4-hour-work-week.jpg', class: 'img-responsive') %>            </div>
+              <h4></h4>
+              <p></p>
+
+          </div><!--/.col-md-4-->
+          <div class="col-md-4 col-sm-6">
+            <div class="center">
+              <%= image_tag('influence.jpg', class: 'img-responsive') %>
+              <h4></h4>
+              <p></p>
+            </div>
+          </div><!--/.col-md-4-->
+          <div class="col-md-4 col-sm-6">
+            <div class="center">
+              <%= image_tag('mastery.jpg', class: 'img-responsive') %>
+              <h4></h4>
+              <p></p>
+            </div>
+          </div><!--/.col-md-4-->
+          <div class="col-md-4 col-sm-6">
+            <div class="center">
+              <%= image_tag('power-of-habit.jpg', class: 'img-responsive') %>
+              <h4></h4>
+              <p></p>
+            </div>
+          </div><!--/.col-md-4-->
+          <div class="col-md-4 col-sm-6">
+            <div class="center">
+              <%= image_tag('zero-to-one.jpg', class: 'img-responsive') %>
+              <h4></h4>
+              <p></p>
+            </div>
+          </div><!--/.col-md-4-->
+        </div><!--/.row-->
+      </div><!--/.box-->
+    </div><!--/.container-->
+  </section><!--/#services-->
 
 
   <section id="pricing">
     <div class="container">
       <div class="box">
         <div class="center">
-          <h2>See our Pricings</h2>
-          <p class="lead">Pellentesque habitant morbi tristique senectus et netus et <br>malesuada fames ac turpis egestas.</p>
+          <h2>Pricing</h2>
+          <p class="lead"></p>
         </div><!--/.center-->
         <div class="big-gap"></div>
         <div id="pricing-table" class="row">
           <div class="col-sm-4">
             <ul class="plan">
-              <li class="plan-name">Basic</li>
-              <li class="plan-price">$29</li>
-              <li>5GB Storage</li>
-              <li>1GB RAM</li>
-              <li>400GB Bandwidth</li>
-              <li>10 Email Address</li>
-              <li>Forum Support</li>
+              <li class="plan-name">Starter</li>
+              <li class="plan-price">$20</li>
+              <li>Full Access to Online Community</li>
+              <li>Digital Notes</li>
+              <li></li>
+              <li></li>
               <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Signup</a></li>
             </ul>
           </div><!--/.col-sm-4-->
           <div class="col-sm-4">
             <ul class="plan featured">
               <li class="plan-name">Standard</li>
-              <li class="plan-price">$49</li>
-              <li>10GB Storage</li>
-              <li>2GB RAM</li>
-              <li>1TB Bandwidth</li>
-              <li>100 Email Address</li>
-              <li>Forum Support</li>
+              <li class="plan-price">$50</li>
+              <li>Full Access to Online Community</li>
+              <li>Printed (and Digital) Notes</li>
+              <li>5 Start Book Every Month</li>
+              <li></li>
               <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Signup</a></li>
             </ul>
           </div><!--/.col-sm-4-->
           <div class="col-sm-4">
             <ul class="plan">
-              <li class="plan-name">Advanced</li>
-              <li class="plan-price">$199</li>
-              <li>30GB Storage</li>
-              <li>5GB RAM</li>
-              <li>5TB Bandwidth</li>
-              <li>1000 Email Address</li>
-              <li>Forum Support</li>
+              <li class="plan-name">Rock Star</li>
+              <li class="plan-price">$80</li>
+              <li>Full Access to Online Community</li>
+              <li>Printed (and Digital Notes)</li>
+              <li>5 Star Book with Hand Written Notes and Tabs</li>
+              <li>Extra Goodie</li>
               <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Signup</a></li>
             </ul>
           </div><!--/.col-sm-4-->
@@ -294,10 +279,10 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+          &copy; 2015 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">BookaMonthClub.com</a>. All Rights Reserved.
         </div>
         <div class="col-sm-6">
-          <img class="pull-right" src="images/shapebootstrap.png" alt="ShapeBootstrap" title="ShapeBootstrap">
+          <!-- <img class="pull-right" src="images/shapebootstrap.png" alt="ShapeBootstrap" title="ShapeBootstrap"> -->
         </div>
       </div>
     </div>
